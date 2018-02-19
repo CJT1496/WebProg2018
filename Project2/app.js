@@ -13,6 +13,7 @@ $(document).ready(function(){
 
 	$('#next').click(function(){										//wait for click
 		index++;
+		$('input[name="radioSet1"]').prop('checked', false); //uncheck the radio button
 		let value =$('input[name=radioSet1]:checked').val();
 		score +=parseInt(value);
 		console.log(value);
